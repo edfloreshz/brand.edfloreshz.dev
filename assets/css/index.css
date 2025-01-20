@@ -68,10 +68,6 @@ a .icon {
 
 .large-svg {
   width: 100%;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  padding-left: 4rem;
-  padding-right: 4rem;
 }
 
 .window {
@@ -87,7 +83,10 @@ a .icon {
 }
 
 .window-icon {
-  width: 3rem;
+  height: 100%;
+  width: 100%;
+  max-width: 3rem;
+  max-height: 3rem;
 }
 
 .title-bar {
@@ -107,7 +106,12 @@ a .icon {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-bottom: 10px;
+  padding: 1rem;
+
+  @media (min-width: 1024px) {
+    padding: 2rem;
+  }
+
   border-top: 10px solid #ffe9cd;
   border-left: 10px solid #ffe9cd;
   border-right: 10px solid #b2946d;
