@@ -7,6 +7,36 @@ html {
   box-sizing: border-box;
 }
 
+@media (prefers-color-scheme: dark) {
+  .container {
+    background: linear-gradient(
+      to bottom,
+      #a07f5a 33%,
+      #b38a5f 33% 66%,
+      #c69b72 66%
+    );
+  }
+
+  div #window {
+    content: url("/assets/svg/window-dark.svg");
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .container {
+    background: linear-gradient(
+      to bottom,
+      #d1ad7f 33%,
+      #edc590 33% 66%,
+      #ffd59c 66%
+    );
+  }
+
+  div #window {
+    content: url("/assets/svg/window-light.svg");
+  }
+}
+
 .container {
   display: flex;
   padding: 2rem;
@@ -14,12 +44,6 @@ html {
   justify-content: space-between;
   min-height: 100vh;
   vertical-align: middle;
-  background: linear-gradient(
-    to bottom,
-    #d1ad7f 33%,
-    #edc590 33% 66%,
-    #ffd59c 66%
-  );
 }
 
 a .icon {
